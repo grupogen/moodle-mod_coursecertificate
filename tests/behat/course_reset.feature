@@ -54,9 +54,9 @@ Feature: Course reset with coursecertificate module
     And I am on "Course 1" course homepage
     And I follow "Test certificate"
     And the following should exist in the "generaltable" table:
-      | First name / Surname | Email address        | Expiry date | Date issued    |
-      | Student Second       | student2@example.com | Never       | 2 January 2002 |
-      | Student First        | student1@example.com | Never       | 1 January 2002 |
+      | First name     | Email address        | Expiry date | Date issued    |
+      | Student Second | student2@example.com | Never       | 2 January 2002 |
+      | Student First  | student1@example.com | Never       | 1 January 2002 |
     And I should not see "Archived" in the ".generaltable" "css_element"
     When I am on "Course 1" course homepage
     And I navigate to "Reports" in current page administration
